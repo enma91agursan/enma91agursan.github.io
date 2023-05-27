@@ -1,0 +1,138 @@
+.collapse:not(.show) {
+
+display: block;
+}
+
+/*menu header*/
+.header{
+    background: #bfe5cf;
+
+}
+
+/*logo*/
+.logo{
+    padding-top: 12px;
+}
+/*Header Wigget*/
+.header .header-widget{
+    float: right;
+    padding: 30px 0;
+}
+.header .single-widget{
+    float: left;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+.header .single-widget:Last-child{
+    margin: 0;
+}
+
+.header .single-widget i {
+position: absolute;
+top: 8px;
+left: 0;
+width: 25px;
+height: 25px;
+
+text-align: center;
+font-size: 25px;
+
+
+background: #bfe5cf;
+
+}
+.header .single-widget h4{
+    margin-bottom: 2px;
+    font-size: 14px;
+text-transform: inicial;
+font-style: 800;
+
+    background: #e9e4e5;
+}
+.header .single-widget a{
+    color: #000000f6
+}
+/*Main Menu*/
+.header .header-inner{
+    background-color: linear-gradient(135deg, #b85164 0%, #e2e1d5 100%);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+}
+.header .mainmenu{
+    float: left;
+    width: 100%;
+}
+.header .nav li{
+    position: relative;
+    margin-right: 5px;
+
+}
+.header .nav li :last-child{
+    margin: 0px
+
+}
+.header .nav li a{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 22px 15px;
+    position: relative;
+    font-weight: 500;
+    display: block;
+}
+.header .nav li:hover a,
+.header .nav li.active a
+{color:#fff;
+
+
+}
+.header .nav li i{
+    scroll-margin-left: 8px;
+    opacity: 0;
+visibility: hidden;
+-webkit-transform: translateX(-100%);
+-moz-transform: translateX(-100%);
+transform:translateX(-100%);
+-webkit-transition: all 0.4s ease;
+transition: all 0.4s ease;
+
+}
+.header .nav li:hover a i{
+    opacity: 1;
+    visibility:visible;
+    -webkit-transform: translateX(0%);
+-moz-transform: translateX(0%);
+transform:translateX(0%);
+}
+
+.header .nav li a::before {
+    position:absolute;
+    top: 0px;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform:translateX(0%);
+    content:'';
+border-top:6px solid #fff;
+border-right: 8px solid #fff;
+border-left: 8px solid #fff;
+margin-left: -8;
+left:50%;
+opacity: 0;
+visibility: hidden;
+-webkit-transform: translateY(-100%);
+-moz-transform: translateY(-100%);
+transform:translateY(-100%); 
+
+
+}
+.header .nav li:active a::before
+.header .nav li:hover a::before {
+-webkit-transform: translateY(0%);
+-moz-transform: translateY(0%);
+transform:translateY(0%);
+opacity: 0;
+visibility: hidden;  
+}
